@@ -1,85 +1,25 @@
-# Markdown Extension Examples
+# Revue de Code - Samuel St-Hilaire
 
-This page demonstrates some of the built-in markdown extensions provided by VitePress.
+# Par Mathieu Bellavance
 
-## Syntax Highlighting
+## Code
 
-VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
+- Le code est visible, mais parfois trop volumineux. Par exemple, dans `app.vue`, davantage de composants auraient pu être créés pour alléger le fichier.
+- Le code respecte les bonnes pratiques de programmation :
+  - Bonnes pratiques de nommage des variables/constantes.
+  - Code clair et sans répétitions inutiles.
+- Le code respecte les normes et standards :
+  - Noms des variables et fonctions bien choisis.
+  - Code en anglais, présentation en français comme demandé.
+- La structure des fichiers est généralement bonne, mis à part le fichier CSS qui n'est pas rangé dans un dossier dédié.
 
-**Input**
+## Tests
 
-````md
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-````
+- Aucun test pour le projet (pas demandé).
 
-**Output**
+## Autres
 
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-
-## Custom Containers
-
-**Input**
-
-```md
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
-```
-
-**Output**
-
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
-
-## More
-
-Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+- Aucun problème de sécurité majeur.
+- Le code est majoritairement optimisé, bien que quelques composants manquent.
+- Les algorithmes sont bien optimisés.
+- Aucune couverture de code (aucun test demandé).

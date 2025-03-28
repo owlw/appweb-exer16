@@ -1,49 +1,28 @@
----
-outline: deep
----
+# Revue de Code - Mathieu Bellavance
 
-# Runtime API Examples
+# Par Samuel St-Hilaire
 
-This page demonstrates usage of some of the runtime APIs provided by VitePress.
+## Code
 
-The main `useData()` API can be used to access site, theme, and page data for the current page. It works in both `.md` and `.vue` files:
+- Le code est lisible, clair et concis. Les algorithmes sont bien divisés et le code est optimal, pas trop complexe.
+- Le code respecte entièrement les bonnes pratiques de programmation :
+  - Bonnes pratiques de nommage des variables/constantes.
+  - Aucune chaîne magique.
+  - Pas de répétition, une seule classe par fichier, etc.
+- La gestion des erreurs est appropriée et les exceptions sont lancées au bon moment et de la bonne façon.
+- Le code respecte les normes et standards :
+  - Variables bien nommées.
+  - Les fonctions sont simples, ne font qu'une seule chose, et il n'y a pas de code redondant.
+  - Code en anglais, présentation en français comme demandé.
+- Le projet ne comporte aucun code mort.
 
-```md
-<script setup>
-import { useData } from 'vitepress'
+## Tests
 
-const { theme, page, frontmatter } = useData()
-</script>
+- Aucun test pour le projet (pas demandé).
 
-## Results
+## Autres
 
-### Theme Data
-<pre>{{ theme }}</pre>
-
-### Page Data
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-```
-
-<script setup>
-import { useData } from 'vitepress'
-
-const { site, theme, page, frontmatter } = useData()
-</script>
-
-## Results
-
-### Theme Data
-<pre>{{ theme }}</pre>
-
-### Page Data
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-
-## More
-
-Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
+- Aucun problème de sécurité majeur.
+- Le code est optimisé (presque à la perfection).
+- Les algorithmes sont bien optimisés.
+- Aucune couverture de code (aucun test demandé).
